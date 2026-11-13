@@ -2,7 +2,7 @@
   "name": "crm-customer-self-service",
   "display_name": "CRM Customer Self-Service",
   "description": "Customer portal, cases, resources, profile and preferences",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "category": "capability",
   "provider": "Liberu\\CRM\\CustomerSelfService\\CustomerSelfServiceServiceProvider",
   "requires": {
