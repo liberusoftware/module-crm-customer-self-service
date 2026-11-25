@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 
-namespace App\Actions\Portal;
+namespace Liberu\CRM\CustomerSelfService\Actions\Portal;
 
-use App\Models\Message;
-use App\Models\Ticket;
+use Liberu\CRM\EmailProductivity\Models\Message;
+use Liberu\CRM\ServiceAgent\Models\Ticket;
 use App\Models\User;
-use App\Notifications\TicketReplyNotification;
+use Liberu\Foundation\Notifications\Notifications\TicketReplyNotification;
 
 /**
  * Persists a staff reply to a portal-origin ticket as a Message on the thread

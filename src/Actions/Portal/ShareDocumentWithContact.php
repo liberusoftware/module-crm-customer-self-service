@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Actions\Portal;
+namespace Liberu\CRM\CustomerSelfService\Actions\Portal;
 
-use App\Models\Contact;
-use App\Models\Document;
-use App\Notifications\DocumentSharedNotification;
-use App\Services\DocumentService;
-use App\Support\PortalCustomer;
+use Liberu\CRM\Core\Models\CrmContact as Contact;
+use Liberu\CRM\Documents\Models\Document;
+use Liberu\Foundation\Notifications\Notifications\DocumentSharedNotification;
+use Liberu\CRM\Documents\Services\DocumentService;
+use Liberu\Foundation\Organizations\Support\PortalCustomer;
 use Illuminate\Http\UploadedFile;
 
 /**

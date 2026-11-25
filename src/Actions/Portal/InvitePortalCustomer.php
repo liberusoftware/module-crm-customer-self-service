@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace App\Actions\Portal;
+namespace Liberu\CRM\CustomerSelfService\Actions\Portal;
 
-use App\Enums\Role;
-use App\Exceptions\PortalOnboardingException;
-use App\Models\Contact;
+use Liberu\Foundation\RolesPermissions\Enums\Role;
+use Liberu\CRM\CustomerSelfService\Exceptions\PortalOnboardingException;
+use Liberu\CRM\Core\Models\CrmContact as Contact;
 use App\Models\User;
-use App\Notifications\PortalInvitation;
-use App\Services\AuditLogService;
+use Liberu\Foundation\Notifications\Notifications\PortalInvitation;
+use Liberu\CRM\Core\Services\AuditLogService;
 use Filament\Facades\Filament;
 use Illuminate\Auth\Passwords\PasswordBroker;
 use Illuminate\Support\Facades\DB;

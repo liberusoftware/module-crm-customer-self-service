@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace App\Actions\Portal;
+namespace Liberu\CRM\CustomerSelfService\Actions\Portal;
 
-use App\Enums\Role;
-use App\Exceptions\PortalOnboardingException;
-use App\Models\Contact;
-use App\Services\AuditLogService;
-use App\Support\PortalCustomer;
+use Liberu\Foundation\RolesPermissions\Enums\Role;
+use Liberu\CRM\CustomerSelfService\Exceptions\PortalOnboardingException;
+use Liberu\CRM\Core\Models\CrmContact as Contact;
+use Liberu\CRM\Core\Services\AuditLogService;
+use Liberu\Foundation\Organizations\Support\PortalCustomer;
 
 /**
  * Removes a customer's portal access by stripping the global `customer` role.
